@@ -1,0 +1,1953 @@
+<USER_REQUEST>
+You are an expert Senior Full-Stack Product Engineer, UI/UX Designer, React Developer, Node.js Developer, MongoDB Developer, AI Application Architect, and Responsive Web Application Engineer.
+
+Build the complete production-quality web application named:
+
+INFONEXIS
+
+Project location MUST be:
+
+D:\Mini Projects\infonexis-ai
+
+Do NOT create the project in another location.
+
+The logo already exists at:
+
+D:\Mini Projects\infonexis.png
+
+Use this exact PNG image as the INFONEXIS logo throughout the application.
+
+Do NOT create a replacement logo.
+Do NOT use a text logo instead of the provided image.
+Do NOT generate another logo.
+
+==================================================
+1. CORE PRODUCT PURPOSE
+==================================================
+
+INFONEXIS is an AI-powered Information Intelligence Platform.
+
+The purpose of INFONEXIS is to help users:
+
+- collect information
+- understand information
+- extract important information
+- organize information
+- compare information
+- identify conflicts
+- identify missing information
+- detect changes
+- prioritize important information
+- convert information into actionable insights
+- generate executive summaries
+- download generated summaries
+- listen to AI-generated audio summaries
+- interact with an AI assistant through text and voice
+- translate information and communicate across supported languages
+
+The product should solve the problem of scattered information and reduce repetitive manual information review.
+
+The application must NOT look like a generic AI chatbot.
+
+It must look like a premium Information Intelligence / AI productivity platform.
+
+==================================================
+2. EXACT TECHNOLOGY STACK
+==================================================
+
+Use the following technology stack.
+
+FRONTEND:
+- React.js
+
+BACKEND:
+- Node.js
+- Express.js
+
+DATABASE:
+- MongoDB
+
+PDF EXTRACTION:
+- PDF Parse
+- PDF.js
+
+OCR:
+- Tesseract.js
+
+LLM:
+- LLM API
+
+AUTHENTICATION:
+- JWT
+
+AI CHAT:
+- LLM API
+
+AI VOICE INPUT:
+- STT (Speech-to-Text)
+
+AI VOICE OUTPUT:
+- TTS (Text-to-Speech)
+
+AI AUDIO SUMMARY:
+- LLM + TTS
+
+Do NOT replace these technologies with unrelated major frameworks or services.
+
+Do not migrate the project to Next.js.
+
+Do not use another backend framework.
+
+Do not replace MongoDB.
+
+Keep the architecture modular and reusable.
+
+==================================================
+3. PROJECT ARCHITECTURE
+==================================================
+
+Create a clean reusable architecture.
+
+Recommended structure:
+
+D:\Mini Projects\infonexis-ai
+
+frontend/
+backend/
+README.md
+
+Frontend should contain reusable components, pages, layouts, services, hooks, utilities, styles and configuration.
+
+Backend should contain:
+
+- routes
+- controllers
+- services
+- middleware
+- models
+- authentication
+- AI services
+- document processing services
+- voice services
+- translation services
+- configuration
+
+Keep frontend and backend clearly separated.
+
+Do NOT put everything inside one huge React component.
+
+Use reusable components.
+
+Use reusable page layouts.
+
+Use reusable cards.
+
+Use reusable buttons.
+
+Use reusable modals.
+
+Use reusable forms.
+
+Use reusable loading states.
+
+Use reusable error states.
+
+Use reusable empty states.
+
+All important UI values should be configurable.
+
+==================================================
+4. USER EXPERIENCE FLOW
+==================================================
+
+The complete application flow must be:
+
+APPLICATION OPEN
+        ↓
+5-SECOND LOGO SPLASH SCREEN
+        ↓
+LOGIN PAGE
+        ↓
+USER ENTERS LOGIN DETAILS
+        ↓
+OTP SENT TO PHONE
+        ↓
+OTP VERIFICATION
+        ↓
+WELCOME / INFONEXIS INTRODUCTION
+        ↓
+USER CLICKS CONNECT / CONTINUE
+        ↓
+HOME / OVERVIEW
+        ↓
+USER USES 5 MAIN FEATURES
+        ↓
+AI ASSISTANT AVAILABLE THROUGHOUT THE APPLICATION
+        ↓
+INFORMATION PROCESSING
+        ↓
+INSIGHTS / ACTIONS / OUTPUT
+        ↓
+DOWNLOAD SUMMARY / AI AUDIO SUMMARY
+        ↓
+EXIT / CLOSE EXPERIENCE
+        ↓
+"Keep Exploring. Keep Understanding. See you soon..."
+
+==================================================
+5. SPLASH SCREEN
+==================================================
+
+Every time the web application is opened, display the INFONEXIS logo first.
+
+Duration:
+
+5 seconds.
+
+The entire screen should focus on the provided INFONEXIS logo.
+
+Use a premium 3D-style presentation.
+
+Use:
+
+- subtle depth
+- soft glow
+- slight 3D movement
+- smooth entrance animation
+- smooth exit animation
+- blue/cyan futuristic lighting
+- minimal abstract AI technology background
+
+Do NOT overcrowd the splash screen.
+
+The logo itself must remain the main focus.
+
+After approximately 5 seconds automatically navigate to Login.
+
+Do not require the user to click anything.
+
+This splash screen must appear every time the application starts.
+
+==================================================
+6. LOGIN PAGE
+==================================================
+
+After splash screen, show the Login page.
+
+The provided INFONEXIS logo must appear at the top center.
+
+Login form must be centered.
+
+Required fields:
+
+1. First Name
+2. Phone Number
+3. Password
+4. User Role
+
+User Role dropdown MUST contain exactly:
+
+- Student
+- Professor
+- Researcher
+- IT Professional
+- Employee
+- Business
+- Health Professional
+- Analyst
+- General User
+
+Do not remove or rename these roles.
+
+Login button should initiate OTP verification.
+
+Flow:
+
+User enters:
+First Name
+Phone Number
+Password
+User Role
+
+        ↓
+
+Login
+
+        ↓
+
+OTP sent to registered phone number
+
+        ↓
+
+OTP Verification Screen
+
+        ↓
+
+6-digit OTP
+
+        ↓
+
+Verify OTP
+
+        ↓
+
+Successful authentication
+
+        ↓
+
+INFONEXIS introduction screen
+
+Use JWT authentication architecture.
+
+Passwords must never be stored in plain text.
+
+Use secure password hashing.
+
+For development/demo mode, create a safe configurable OTP fallback.
+
+Real SMS provider configuration should be environment-variable based.
+
+Do not hardcode real credentials.
+
+==================================================
+7. INTRODUCTION / WELCOME SCREEN
+==================================================
+
+After successful OTP verification, do NOT immediately throw the user into the dashboard.
+
+Show a small professional introduction section near the upper/center area.
+
+Explain clearly:
+
+What is INFONEXIS?
+
+What does INFONEXIS do?
+
+Why is it useful?
+
+What problem does it solve?
+
+What should the user do inside the platform?
+
+Example concept:
+
+"INFONEXIS transforms scattered information into understandable, prioritized and actionable insights. Upload or connect your information, let INFONEXIS understand what matters, identify conflicts or missing details, and help you decide what to do next."
+
+Keep the content concise.
+
+Do not create a huge paragraph.
+
+Use:
+
+- heading
+- short description
+- 3–4 concise value points
+
+At the bottom, show a button with English text such as:
+
+"Connect & Continue"
+
+Clicking it should open the Home / Overview page.
+
+==================================================
+8. MAIN APPLICATION NAVIGATION
+==================================================
+
+The main application must have exactly SIX primary navigation items:
+
+1. Overview
+2. Information
+3. Intelligence
+4. Actions
+5. Sources
+6. Settings
+
+Do NOT show all 27 features as separate sidebar buttons.
+
+The 27 features must be intelligently grouped inside these sections.
+
+Desktop:
+
+Use a professional left sidebar.
+
+Mobile:
+
+The six primary navigation items MUST move to a fixed bottom navigation bar.
+
+Mobile bottom navigation must remain accessible.
+
+Do not allow navigation alignment to jump while scrolling.
+
+The navigation must remain stable.
+
+==================================================
+9. MAIN FEATURE GROUPING
+==================================================
+
+MAIN 1 — OVERVIEW
+
+Inside Overview:
+
+- Attention Center
+- Notifications
+- Information Health
+- Personalized Priority
+
+Overview should answer:
+
+"What needs my attention right now?"
+
+Display:
+
+- critical items
+- conflicts
+- missing information
+- important deadlines
+- recent changes
+- pending actions
+- information health
+- personalized priority
+
+Do not overload the page.
+
+Use cards and sections.
+
+==================================================
+
+MAIN 2 — INFORMATION
+==================================================
+
+Inside Information:
+
+- Multi-source information
+- Manual Upload
+- AI Extraction
+- Smart Search
+- Summary Generation
+
+Supported information types should include where applicable:
+
+- PDF
+- documents
+- text
+- images
+- scanned documents
+- structured information
+
+UPLOAD BEHAVIOUR IS VERY IMPORTANT.
+
+When the user uploads a document:
+
+DO NOT return the same generic executive summary for every file.
+
+The system must actually process the uploaded document.
+
+Pipeline:
+
+UPLOAD
+↓
+FILE VALIDATION
+↓
+PDF/DOCUMENT EXTRACTION
+↓
+OCR WHEN REQUIRED
+↓
+TEXT EXTRACTION
+↓
+CONTENT ANALYSIS
+↓
+LLM UNDERSTANDING
+↓
+KEY INFORMATION EXTRACTION
+↓
+DOCUMENT-SPECIFIC EXECUTIVE SUMMARY
+↓
+IMPORTANT DETAILS
+↓
+ACTIONABLE ITEMS
+↓
+CONFLICTS IF PRESENT
+↓
+MISSING INFORMATION IF DETECTED
+↓
+OUTPUT
+
+The executive summary must be generated from the actual uploaded file content.
+
+If the uploaded file is a college circular, summarize the college circular.
+
+If the uploaded file is a business report, summarize the business report.
+
+If the uploaded file is a medical administrative document, summarize that document.
+
+If the uploaded file is a research paper, summarize that research paper.
+
+Do NOT return a fixed generic summary.
+
+Every output must be based on the actual input.
+
+Use:
+
+- PDF.js / PDF parsing for PDFs
+- Tesseract.js for scanned/image-based documents
+- LLM API for understanding and summary generation
+
+Show document processing status:
+
+Uploading
+→ Extracting
+→ Scanning
+→ Understanding
+→ Generating Summary
+→ Complete
+
+==================================================
+10. MAIN 3 — INTELLIGENCE
+==================================================
+
+Inside Intelligence:
+
+- Priority Detection
+- Conflict Detection
+- Missing Information Detection
+- Change Detection
+- Compare
+- Explainable AI
+- Knowledge Relationships
+- Knowledge Graph
+- Automatic Issue Resolution
+
+This is the core intelligence layer.
+
+Priority Detection:
+
+Determine which information requires attention.
+
+Conflict Detection:
+
+Compare information from different sources and identify contradictory facts.
+
+Example:
+
+Document A:
+Meeting date = October 20
+
+Document B:
+Meeting date = October 25
+
+INFONEXIS should identify:
+
+"Potential conflict detected."
+
+Do not silently choose one.
+
+Show both sources.
+
+Show the conflicting values.
+
+Show why it matters.
+
+Missing Information:
+
+Identify potentially required information that is absent.
+
+Change Detection:
+
+Compare previous and latest information.
+
+Show:
+
+What changed?
+Old value
+New value
+Source
+Time
+
+Compare:
+
+Allow users to compare two or more sources.
+
+Explainable AI:
+
+Every important AI decision should explain:
+
+- what was detected
+- why it matters
+- which source supports it
+
+Knowledge Relationships / Graph:
+
+Visually represent relationships between:
+
+documents
+people
+organizations
+events
+dates
+facts
+actions
+
+Keep the graph professional and lightweight.
+
+Do not create unnecessary heavy 3D graphics.
+
+Automatic Issue Resolution:
+
+When new information resolves a previously detected conflict or missing information issue, update the issue state.
+
+==================================================
+11. MAIN 4 — ACTIONS
+==================================================
+
+Inside Actions:
+
+- Recommendations
+- Action Center
+- Timeline
+- Attention Workflow
+- Notifications
+
+The goal is:
+
+Information → Insight → Action
+
+Action Center should show:
+
+Task
+Reason
+Source
+Priority
+Deadline
+Recommended next step
+Status
+
+Timeline should show important information events chronologically.
+
+Recommendations should be based on actual detected information.
+
+Do not show meaningless generic recommendations.
+
+==================================================
+12. MAIN 5 — SOURCES
+==================================================
+
+Inside Sources:
+
+- Gmail
+- Google Drive
+- Manual Upload
+- Future WhatsApp Business integration
+
+The UI should show connection status.
+
+Examples:
+
+Connected
+Not Connected
+Reconnect
+Disconnect
+
+Use secure OAuth-based architecture for external integrations.
+
+Do NOT ask users to provide their Gmail password to INFONEXIS.
+
+WhatsApp:
+
+Do NOT implement personal WhatsApp scraping.
+
+Architecture should support official WhatsApp Business API / Cloud API in future.
+
+==================================================
+13. SETTINGS
+==================================================
+
+Add Settings as the sixth primary navigation item.
+
+Inside Settings:
+
+1. Profile
+2. Account & Security
+3. AI Preferences
+4. Voice & Audio
+5. Document Processing
+6. Notifications
+7. Privacy & Data
+8. Storage
+9. Help & Support
+
+Profile:
+
+- name
+- phone
+- role
+- profile information
+
+Account & Security:
+
+- password
+- authentication
+- JWT session management
+- logout
+- security options
+
+AI Preferences:
+
+- response style
+- summary length
+- AI behaviour preferences
+
+Voice & Audio:
+
+- input language
+- output language
+- voice preferences
+- TTS settings
+- audio summary preferences
+
+Document Processing:
+
+- OCR settings
+- PDF processing preferences
+- summary preferences
+
+Notifications:
+
+- critical alerts
+- conflicts
+- missing information
+- deadlines
+- changes
+
+Privacy & Data:
+
+- data management
+- delete data
+- retention settings
+- connected source permissions
+
+Storage:
+
+- processed files
+- storage usage
+- cleanup options
+
+Help & Support:
+
+- FAQ
+- support
+- documentation
+
+==================================================
+14. AI ASSISTANT
+==================================================
+
+The AI Assistant must be available throughout the authenticated application.
+
+Do NOT display the word:
+
+"Info"
+
+inside the floating assistant button.
+
+Only show a STAR symbol.
+
+The floating assistant should be a square-shaped premium 3D-style button.
+
+Position:
+
+Bottom-right.
+
+Example:
+
+┌───────┐
+│   ✦   │
+└───────┘
+
+Use a subtle blue/cyan glow.
+
+Use a small amount of 3D depth.
+
+Do not make it huge.
+
+Do not cover important page content.
+
+On mobile, reposition it intelligently so it does not overlap the bottom navigation.
+
+==================================================
+15. AI ASSISTANT FUNCTIONS
+==================================================
+
+AI Assistant must support:
+
+1. Text Chat
+2. Voice Input
+3. Voice Output
+4. Translation
+5. Multi-language interaction
+
+IMPORTANT:
+
+VOICE INPUT MUST ACTUALLY PROCESS WHAT THE USER SAYS.
+
+Do NOT return the same fixed answer for every voice input.
+
+Correct pipeline:
+
+Microphone
+↓
+STT
+↓
+Actual recognized speech text
+↓
+User question
+↓
+LLM API
+↓
+Context-aware answer
+↓
+Display answer
+↓
+Optional TTS output
+
+Example:
+
+User says:
+"What is the deadline mentioned in this document?"
+
+AI should answer based on the document.
+
+User then says:
+"Who is responsible for it?"
+
+AI should answer based on the conversation/context.
+
+Do NOT hardcode a generic response.
+
+Chat history must work correctly.
+
+Each user message must produce a contextually relevant response.
+
+Show:
+
+User message
+AI response
+timestamps where useful
+loading state
+error state
+retry option
+
+==================================================
+16. AI ASSISTANT PAGE
+==================================================
+
+The dedicated AI Assistant page must open correctly without layout errors.
+
+It must contain:
+
+- conversation area
+- user messages
+- AI messages
+- text input
+- send button
+- microphone button
+- voice status
+- language selector
+- translation support
+- clear conversation
+- loading indicator
+- error handling
+- retry
+- source context where applicable
+
+The page must work independently and must not break when opened directly.
+
+No overlapping components.
+
+No horizontal overflow.
+
+No broken responsive layout.
+
+==================================================
+17. MULTI-LANGUAGE SUPPORT
+==================================================
+
+IMPORTANT:
+
+Multi-language support applies to the ENTIRE WEB APPLICATION.
+
+NOT ONLY THE AI ASSISTANT.
+
+The following must support localization:
+
+- navigation
+- buttons
+- headings
+- labels
+- settings
+- notifications
+- forms
+- dashboard
+- AI assistant
+- summaries
+- document output
+- error messages
+- system messages
+
+Architecture must be reusable for language expansion.
+
+Do not claim that every world language is already perfectly translated if the underlying translation service does not support it.
+
+Build a scalable localization architecture that can support all available languages.
+
+==================================================
+18. OUTPUT / SUMMARY
+==================================================
+
+When the user provides information or uploads a document, the final output must be based on that actual input.
+
+Output should include:
+
+- Executive Summary
+- Important Information
+- Key Facts
+- Detected Issues
+- Missing Information
+- Recommended Actions
+- Source references where applicable
+
+The output must be downloadable.
+
+Supported download formats should be architected cleanly.
+
+The final output area should also provide:
+
+AI Audio Summary
+
+The AI Audio Summary pipeline:
+
+Actual input
+↓
+LLM generates summary
+↓
+TTS converts summary to audio
+↓
+User can play audio
+↓
+User can download audio where supported
+
+The audio summary must correspond to the actual generated summary.
+
+Do NOT use one fixed audio response.
+
+==================================================
+19. FINAL OUTPUT EXPERIENCE
+==================================================
+
+At the end of a document/information processing workflow:
+
+Show:
+
+EXECUTIVE SUMMARY
+
+then:
+
+Key Information
+
+Important Details
+
+Issues
+
+Actions
+
+Sources
+
+Then:
+
+Download Summary
+
+and:
+
+AI Audio Summary
+
+These output features should appear as the final stage of the workflow.
+
+Do not make them separate primary navigation items.
+
+==================================================
+20. EXIT / CLOSE EXPERIENCE
+==================================================
+
+The product should have a premium exit experience.
+
+When the user exits/logs out/closes the application where the browser environment allows a proper in-app exit experience, show a minimal 3D-style greeting:
+
+"Keep Exploring.
+Keep Understanding.
+See you soon..."
+
+Use:
+
+- subtle 3D typography
+- deep blue/cyan glow
+- minimal animation
+- professional spacing
+
+Do not overdo the 3D effect.
+
+Important browser limitation:
+
+Do not create unreliable or disruptive browser-close hacks.
+
+Use the exit experience for supported in-app logout/exit flows and graceful application exit states.
+
+==================================================
+21. UI / UX DESIGN
+==================================================
+
+Overall visual quality must be:
+
+Premium
+Professional
+Modern
+Minimal
+Futuristic
+Enterprise-grade
+Cinematic
+
+The application must primarily use a LIGHT THEME.
+
+Use deep blue and cyan as futuristic brand/accent colors.
+
+Use:
+
+- premium gradients
+- soft glassmorphism
+- blue/cyan glow
+- glowing icons
+- large typography where appropriate
+- generous breathing space
+- clean cards
+- subtle shadows
+- subtle borders
+- smooth animations
+- abstract AI/technology visuals
+- minimal cinematic appearance
+
+Deep blue futuristic visuals may be used strongly for:
+
+- splash screen
+- login hero/background
+- AI assistant
+- special hero sections
+- exit greeting
+
+Do NOT turn the complete application into a dark theme.
+
+Do NOT use excessive 3D graphics.
+
+3D visuals should only appear where they add value.
+
+Examples:
+
+- logo splash
+- AI assistant button
+- AI-related visual
+- exit greeting
+- selected hero visual
+
+Everything else should remain clean and professional.
+
+==================================================
+22. TYPOGRAPHY
+==================================================
+
+Use large, readable modern typography.
+
+Maintain:
+
+- clear hierarchy
+- consistent font sizes
+- proper line heights
+- readable paragraph widths
+- sufficient spacing
+
+Do not use excessive text.
+
+Do not create visually crowded cards.
+
+==================================================
+23. RESPONSIVE DESIGN
+==================================================
+
+This is extremely important.
+
+The application must work correctly on:
+
+- desktop
+- laptop
+- tablet
+- Android phones
+- iPhones
+- small phones
+- large phones
+- different screen widths
+- different browser viewport sizes
+
+No layout should break.
+
+No horizontal scrolling.
+
+No overlapping text.
+
+No clipped buttons.
+
+No overflowing cards.
+
+No sidebar overflow.
+
+No broken bottom navigation.
+
+On mobile:
+
+Six primary navigation items must appear at the bottom:
+
+Overview
+Information
+Intelligence
+Actions
+Sources
+Settings
+
+The bottom navigation must remain stable.
+
+AI floating button must sit above the bottom navigation without overlap.
+
+==================================================
+24. ALIGNMENT QUALITY
+==================================================
+
+Perform a complete alignment audit.
+
+Check every page.
+
+Check:
+
+- header
+- sidebar
+- cards
+- buttons
+- icons
+- forms
+- tables
+- charts
+- modals
+- AI assistant
+- chat messages
+- upload areas
+- document preview
+- summary output
+- settings
+- mobile navigation
+
+Alignment must NOT change unexpectedly while scrolling.
+
+Avoid layout shift.
+
+Reserve required space for dynamic elements.
+
+Use stable dimensions where appropriate.
+
+No element should randomly jump because content loads.
+
+No horizontal overflow.
+
+No accidental scrollbars.
+
+==================================================
+25. LOADING / ERROR / EMPTY STATES
+==================================================
+
+Every major dynamic section must have:
+
+Loading state
+Empty state
+Error state
+Success state
+
+Example:
+
+Document upload:
+
+Uploading...
+Scanning...
+Extracting...
+Understanding...
+Generating...
+Complete
+
+If processing fails:
+
+"Unable to process this document."
+
+Show:
+
+Retry
+
+Do not show broken UI.
+
+==================================================
+26. DOCUMENT PROCESSING ARCHITECTURE
+==================================================
+
+Document processing must be modular.
+
+Pipeline:
+
+File Upload
+↓
+Validation
+↓
+File Type Detection
+↓
+PDF Parser / PDF.js
+↓
+OCR using Tesseract.js when required
+↓
+Text Normalization
+↓
+Content Extraction
+↓
+LLM Analysis
+↓
+Structured Information
+↓
+Executive Summary
+↓
+Issues
+↓
+Actions
+↓
+Output
+
+Do not hardcode document results.
+
+==================================================
+27. DATA-DRIVEN UI
+==================================================
+
+Do NOT hardcode every dashboard card manually.
+
+Use structured data models.
+
+For example:
+
+documents
+issues
+actions
+notifications
+sources
+insights
+summary
+conversationMessages
+
+The UI should render from data.
+
+This makes the application reusable and easy to modify.
+
+==================================================
+28. REUSABILITY
+==================================================
+
+The project must be built so that I can change things later easily.
+
+Examples:
+
+- change logo
+- change colors
+- change navigation labels
+- add/remove supported languages
+- change user roles
+- change AI provider
+- change document types
+- change summary format
+- change notification types
+- change voice settings
+
+Avoid hardcoding values throughout the application.
+
+Create centralized configuration where appropriate.
+
+==================================================
+29. SECURITY
+==================================================
+
+Use secure architecture.
+
+Authentication:
+
+JWT
+
+Passwords:
+
+hashed, never plain text
+
+Environment variables:
+
+Use .env for secrets.
+
+Never expose:
+
+API keys
+JWT secrets
+database passwords
+LLM API keys
+SMS provider credentials
+
+Never commit secrets to GitHub.
+
+Add proper .gitignore.
+
+Use authentication middleware on protected backend routes.
+
+Validate API inputs.
+
+Validate uploaded files.
+
+Restrict file types and file sizes.
+
+==================================================
+30. DATABASE
+==================================================
+
+Use MongoDB.
+
+Create reusable models for relevant entities such as:
+
+User
+Document
+ExtractedInformation
+Issue
+Action
+Notification
+Source
+Conversation
+Summary
+Settings
+
+Do not store unnecessary duplicate data.
+
+Design relationships cleanly.
+
+==================================================
+31. API DESIGN
+==================================================
+
+Create clean Express.js API routes.
+
+Examples:
+
+/api/auth
+/api/users
+/api/documents
+/api/extraction
+/api/ai
+/api/chat
+/api/voice
+/api/summary
+/api/actions
+/api/issues
+/api/notifications
+/api/sources
+/api/settings
+
+Use controllers and services.
+
+Do not put all backend logic inside route files.
+
+==================================================
+32. AI ARCHITECTURE
+==================================================
+
+The LLM should be responsible for understanding and generating language.
+
+Do not blindly ask the LLM to perform everything.
+
+Use application logic for:
+
+- priority rules
+- conflict comparison
+- missing information checks
+- state management
+- workflow
+- authentication
+- permissions
+
+LLM:
+
+Understand
+Extract
+Summarize
+Answer
+Translate
+Generate recommendations
+
+Application:
+
+Validate
+Compare
+Score
+Store
+Track
+Notify
+Manage
+
+==================================================
+33. SOURCE-GROUNDED AI
+==================================================
+
+Whenever possible, AI answers should be grounded in the user's actual information.
+
+For document questions:
+
+AI should answer from the uploaded document/context.
+
+For source comparisons:
+
+AI should reference the relevant sources.
+
+For conflicts:
+
+show source A and source B.
+
+Do not fabricate information.
+
+If information is unavailable:
+
+say that the information was not found.
+
+Do not pretend to know.
+
+==================================================
+34. CHAT CONTEXT
+==================================================
+
+The AI assistant must maintain appropriate conversation context.
+
+Example:
+
+User:
+"What is the deadline?"
+
+AI:
+"The deadline is October 12."
+
+User:
+"What do I need to submit?"
+
+AI:
+"The required documents are..."
+
+Do not reset context after every message.
+
+However, conversation history must be manageable and privacy-aware.
+
+==================================================
+35. VOICE
+==================================================
+
+Voice input:
+
+Microphone
+→ STT
+→ Actual transcript
+→ AI
+
+Voice output:
+
+AI response
+→ TTS
+→ Audio playback
+
+Do not hardcode voice responses.
+
+Display recognized speech text before/while processing where appropriate.
+
+Provide microphone permission handling.
+
+If permission is denied, show a clear message.
+
+==================================================
+36. PROFESSIONAL ANIMATIONS
+==================================================
+
+Use smooth animations.
+
+Examples:
+
+- page transitions
+- card hover
+- logo splash
+- AI assistant opening
+- modal opening
+- loading states
+- upload progress
+- success states
+
+Animations must be subtle.
+
+Do not create distracting animations.
+
+Respect reduced-motion preferences where practical.
+
+==================================================
+37. DESKTOP LAYOUT
+==================================================
+
+Desktop structure:
+
+LEFT SIDEBAR
+        +
+TOP HEADER
+        +
+MAIN CONTENT
+        +
+FLOATING AI ASSISTANT
+
+Sidebar:
+
+INFONEXIS logo
+Overview
+Information
+Intelligence
+Actions
+Sources
+Settings
+
+Top header:
+
+page title
+search where relevant
+notifications
+profile
+
+Main content:
+
+page-specific workspace
+
+Bottom-right:
+
+floating STAR AI button
+
+==================================================
+38. MOBILE LAYOUT
+==================================================
+
+Mobile:
+
+Top:
+
+compact header
+
+Middle:
+
+page content
+
+Bottom:
+
+fixed navigation:
+
+Overview
+Information
+Intelligence
+Actions
+Sources
+Settings
+
+AI STAR button:
+
+position above bottom navigation
+
+Do not allow overlap.
+
+Cards should become single-column or appropriate responsive layouts.
+
+Tables should transform into cards or horizontal-scroll containers only when absolutely necessary.
+
+==================================================
+39. ACCESSIBILITY
+==================================================
+
+Use:
+
+- semantic HTML
+- accessible buttons
+- keyboard navigation
+- proper labels
+- sufficient contrast
+- focus states
+- aria labels where needed
+- readable text
+
+Do not make icons the only way to understand functionality unless accessible labels are provided.
+
+==================================================
+40. PERFORMANCE
+==================================================
+
+Optimize:
+
+- images
+- component rendering
+- document processing
+- API calls
+- large document handling
+- chat rendering
+
+Use lazy loading where appropriate.
+
+Do not unnecessarily process the same document repeatedly.
+
+==================================================
+41. NO PLACEHOLDER UI IN FINAL PRODUCT
+==================================================
+
+Do not leave:
+
+TODO
+Coming Soon
+Lorem Ipsum
+Dummy cards
+Broken buttons
+Empty fake charts
+Fake AI responses
+
+unless explicitly marked as a development fallback.
+
+The final product should feel complete.
+
+If an external API is not configured yet, create a proper configuration/error state instead of pretending the API is working.
+
+==================================================
+42. NO GENERIC AI SUMMARY
+==================================================
+
+This is a critical requirement.
+
+NEVER return the same executive summary for different uploaded files.
+
+The summary must depend on the actual document content.
+
+Test using at least multiple different document examples.
+
+Verify that the output changes according to the uploaded content.
+
+==================================================
+43. TESTING REQUIREMENT
+==================================================
+
+Before considering the project complete, test:
+
+Login
+OTP
+JWT authentication
+Navigation
+Overview
+Information
+Document upload
+PDF extraction
+OCR flow
+AI extraction
+Summary generation
+Intelligence
+Conflict detection
+Missing information
+Compare
+Actions
+Sources
+Settings
+AI Chat
+Voice input
+Voice output
+Translation
+Download Summary
+AI Audio Summary
+Responsive desktop
+Responsive tablet
+Responsive mobile
+Logout / exit experience
+
+Test different screen widths.
+
+Test scrolling.
+
+Test long text.
+
+Test long filenames.
+
+Test empty data.
+
+Test errors.
+
+Test loading states.
+
+Test AI assistant independently.
+
+==================================================
+44. AI ASSISTANT BUG PREVENTION
+==================================================
+
+Specifically test the AI Assistant for:
+
+- opening correctly
+- closing correctly
+- chat input
+- Enter key
+- send button
+- microphone
+- STT
+- AI response
+- TTS
+- translation
+- conversation history
+- long messages
+- mobile layout
+- desktop layout
+- scrolling
+- loading state
+- API failure
+- retry
+- no-data questions
+
+Do NOT allow a fixed answer to be returned for every question.
+
+==================================================
+45. FINAL QUALITY AUDIT
+==================================================
+
+Before completion, perform a full UI/UX audit.
+
+Check:
+
+Alignment
+Spacing
+Typography
+Colors
+Responsive design
+Navigation
+Animations
+Accessibility
+Performance
+Loading states
+Error states
+AI assistant
+Document processing
+Authentication
+Security
+API architecture
+Database architecture
+
+Fix every issue discovered.
+
+Do not stop after generating the initial UI.
+
+Build → Run → Test → Identify issues → Fix → Test again.
+
+Repeat until the application is stable.
+
+==================================================
+46. ANTIGRAVITY EXECUTION BEHAVIOUR
+==================================================
+
+IMPORTANT:
+
+Do not stop halfway after creating a basic frontend.
+
+Continue the implementation until the requested application is substantially complete.
+
+Do not pause after creating only the login page.
+
+Do not stop after creating only the dashboard.
+
+Do not stop after creating static screens.
+
+Implement the complete reusable architecture.
+
+When something is broken:
+
+1. identify the issue
+2. inspect the relevant code
+3. fix it
+4. run/test again
+5. continue
+
+Do not ask unnecessary confirmation questions for every small implementation decision.
+
+Make reasonable engineering decisions while strictly following this specification.
+
+Do NOT change the requested product structure.
+
+Do NOT remove requested features.
+
+Do NOT rename the six main navigation items.
+
+Do NOT remove the user roles.
+
+Do NOT remove AI chat.
+
+Do NOT remove voice.
+
+Do NOT remove translation.
+
+Do NOT remove document-specific summary generation.
+
+Do NOT remove downloadable output.
+
+Do NOT remove AI audio summary.
+
+Do NOT remove the splash screen.
+
+Do NOT remove the exit greeting.
+
+==================================================
+47. REQUIRED FINAL NAVIGATION
+==================================================
+
+Desktop:
+
+Overview
+Information
+Intelligence
+Actions
+Sources
+Settings
+
+Mobile:
+
+Bottom navigation:
+
+Overview
+Information
+Intelligence
+Actions
+Sources
+Settings
+
+Floating:
+
+✦
+
+The STAR button opens the AI Assistant.
+
+==================================================
+48. FINAL PRODUCT EXPERIENCE
+==================================================
+
+The final experience should feel like:
+
+A premium AI Information Intelligence platform.
+
+Not:
+
+a simple college project
+a basic CRUD application
+a generic dashboard
+a generic ChatGPT clone
+a document summarizer only
+
+The visual experience should communicate:
+
+"INFONEXIS helps me understand what matters."
+
+The central product philosophy is:
+
+FIND
+UNDERSTAND
+ORGANIZE
+COMPARE
+PRIORITIZE
+ACT
+
+==================================================
+49. BRAND EXPERIENCE
+==================================================
+
+Use the provided INFONEXIS logo:
+
+D:\Mini Projects\infonexis.png
+
+Use it consistently.
+
+Do not distort the logo.
+
+Maintain correct aspect ratio.
+
+Use suitable sizing for:
+
+- splash
+- login
+- sidebar
+- mobile header
+
+==================================================
+50. FINAL SUCCESS CONDITION
+==================================================
+
+The project is considered complete only when:
+
+- project exists at D:\Mini Projects\infonexis-ai
+- React frontend works
+- Node.js + Express backend works
+- MongoDB architecture is connected/configured
+- JWT authentication architecture works
+- OTP architecture is implemented
+- document processing architecture exists
+- PDF extraction architecture exists
+- OCR architecture exists
+- LLM API integration architecture exists
+- AI chat works through the LLM API
+- STT architecture works
+- TTS architecture works
+- AI audio summary works
+- six primary navigation sections work
+- all requested 27 feature capabilities are represented within the appropriate sections
+- Settings contains all nine requested subsections
+- splash screen works
+- login works
+- OTP flow works
+- introduction screen works
+- Overview works
+- Information works
+- Intelligence works
+- Actions works
+- Sources works
+- Settings works
+- AI floating STAR assistant works
+- chat is dynamic and question-specific
+- voice input processes actual speech
+- translation applies to the application architecture
+- uploaded documents produce document-specific summaries
+- downloadable summary exists
+- AI audio summary exists
+- responsive mobile navigation works
+- alignment is stable
+- no major UI overlap exists
+- no horizontal overflow exists
+- no broken page exists
+- no generic fixed AI response is used
+- no fake document summary is used
+- no exposed secrets exist
+- project is reusable and maintainable
+- README contains setup instructions
+- .env.example is provided
+- final application has been tested
+
+Do not consider the task finished merely because the development server starts.
+
+The task is finished only after the full product flow has been implemented, tested, reviewed, and corrected.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-10-09T00:51:53+05:30.
+</ADDITIONAL_METADATA>
+<USER_SETTINGS_CHANGE>
+The user changed setting `Model Selection` from None to Claude Sonnet 4.6 (Thinking). No need to comment on this change if the user doesn't ask about it. If reporting what model you are, please use a human readable name instead of the exact string.
+</USER_SETTINGS_CHANGE>
