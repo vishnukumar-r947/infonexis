@@ -1,116 +1,269 @@
-﻿# INFONEXIS — AI-Powered Information Intelligence Platform
+# INFONEXIS — AI-Powered Information Intelligence Platform
 
 <p align="center">
   <img src="./frontend/src/assets/logo/infonexis.png" alt="INFONEXIS Logo" width="160" />
 </p>
 
-INFONEXIS is an enterprise-grade AI-powered Information Intelligence Platform designed to transform scattered documents, emails, and data into clear, prioritized, explainable, and actionable intelligence.
+<p align="center">
+  <strong>Understand What Matters. Act with Confidence.</strong>
+</p>
+
+INFONEXIS is an AI-powered Information Intelligence Platform designed to transform scattered documents, reports, emails, and records into organized, explainable, and actionable insights.
+
+It helps users find relevant information, understand important details, identify inconsistencies, track changes, and determine what requires attention.
 
 ---
 
-## 1. Key Value Proposition & Problem Solved
+## 1. Problem Statement
 
-Modern organizations suffer from fragmented documents, contradictory guidelines, buried deadlines, and missed requirements across memos, circulars, and contracts. INFONEXIS solves this by providing:
+Organizations and individuals manage information across multiple documents, files, and communication channels. Finding important details manually can be time-consuming and may lead to missed deadlines, conflicting information, repeated work, and delayed decisions.
 
-1. **Multi-Source Ingestion & Extraction**: Ingest PDFs (via `pdf-parse` / `PDF.js`), scanned circulars/images (via `Tesseract.js` OCR), Word documents, and cloud storage feeds.
-2. **Dynamic, Document-Specific Analysis**: Synthesizes genuine executive summaries, extracted key facts, entity tables, and missing items grounded in actual content (no fixed generic canned outputs).
-3. **Contradiction & Conflict Detection**: Identifies conflicting dates, numbers, and clauses between multiple documents with side-by-side comparative views and automated resolution options.
-4. **Actionable Timeline & Next Steps**: Automatically maps insights into prioritized action items with deadlines and tracking workflows.
-5. **AI Audio Summary**: Integrated Text-To-Speech (TTS) synthesizing actual summaries into playable and speed-adjustable audio briefings.
-6. **Voice & Text Intelligence Assistant**: Dedicated conversational AI with live Speech-to-Text (STT), cross-lingual translation (English, Hindi, Tamil, Arabic, French), and source citations.
-7. **3D Floating STAR Assistant (✦)**: Accessible throughout the app without cluttering mobile or desktop views.
-8. **Graceful 3D Exit Experience**: Polished departure experience preserving active workspace state.
+INFONEXIS aims to simplify this process through an integrated information understanding and intelligence workflow.
 
----
+## 2. Our Solution
 
-## 2. Technology Stack
+INFONEXIS follows an information intelligence workflow:
 
-- **Frontend**: React 19, Vite, Lucide Icons, Vanilla CSS Design System, Web Speech API (STT & TTS)
-- **Backend**: Node.js, Express.js, JWT Authentication, Multer file upload
-- **Extraction & OCR**: `pdf-parse` / `PDF.js` for PDFs, `Tesseract.js` for OCR scans
-- **Database**: MongoDB with Mongoose, with automatic offline fallback layer
-- **Internationalization (i18n)**: Scalable multi-language engine (EN, HI, TA, AR, FR)
-- **Brand Identity**: Authentic INFONEXIS PNG logo (`D:\Mini Projects\infonexis.png`)
+**Find → Understand → Organize → Compare → Prioritize → Act**
 
----
+The platform is designed to help users:
 
-## 3. Application Architecture & Navigation
+* Discover relevant information quickly.
+* Extract important facts, dates, and entities from documents.
+* Generate document-specific AI summaries.
+* Identify conflicting or missing information.
+* Detect changes between information sources.
+* Understand why an item matters and review supporting evidence.
+* Organize tasks, deadlines, issues, and recommendations.
+* Interact with an AI assistant using text and supported voice features.
 
-The platform groups all 27 capabilities into **SIX Primary Navigation Modules**:
+## 3. Core Features
 
-1. **Overview**:
-   - Attention Center
-   - Information Health Circular Gauge (94% baseline)
-   - Active Contradiction Alerts
-   - Pending Deadlines & Recent Delta Changes
-   - Personalized Priority Matrix
-2. **Information**:
-   - Multi-Source Drag-and-Drop Uploader
-   - Multi-stage pipeline: *Uploading &rarr; Extracting &rarr; Scanning (OCR) &rarr; Understanding &rarr; Generating Summary &rarr; Complete*
-   - Document-Specific Executive Summary, Key Facts, Issues, and Recommended Actions
-   - Download Summary (Text, Markdown, JSON)
-   - AI Audio Summary Playback (Play/Pause, 1x/1.25x/1.5x speed)
-   - Information Vault Repository & Smart Search
-3. **Intelligence**:
-   - Side-by-side Conflict Detection (e.g., Oct 20 vs Oct 25 date mismatch)
-   - Explainable AI Rationale ("What detected, Why it matters, Which source supports it")
-   - Missing Information Detection with Impact Analysis
-   - Chronological Delta Audit Log
-   - Side-by-Side Document Comparison Tool
-   - Interactive Knowledge Graph (SVG Canvas linking documents, owners, dates, and actions)
-   - Automatic Issue Resolution toggles
-4. **Actions**:
-   - Prioritized Action Center (Task, Reason, Source, Deadline, Status)
-   - Chronological Information Timeline
-   - AI Recommendations Engine
-   - 3-Column Attention Workflow (Pending, In Progress, Resolved)
-5. **Sources**:
-   - Integration Hub for Gmail, Google Drive, Local Vault, and WhatsApp Business API
-   - Tokenized OAuth 2.0 status (Connected, Sync Now, Disconnect)
-   - Zero-password storage security guarantee
-6. **Settings**:
-   - All 9 dedicated subsections:
-     1. Profile
-     2. Account & Security (JWT Sessions, 2FA OTP)
-     3. AI Intelligence Preferences (Style, Length, Temperature)
-     4. Voice & Audio (Input language, TTS Speech Rate)
-     5. Document Processing Engine (OCR, PDF.js)
-     6. Notifications
-     7. Privacy & Data Lifecycle
-     8. Storage Analytics
-     9. Help & Interactive FAQ
+### Overview
 
----
+* Attention Center and priority overview.
+* Information health indicators.
+* Important alerts and pending deadlines.
+* Recent information changes.
+* Recommended next actions.
 
-## 4. Setup & Running Locally
+### Information
 
-### Backend Setup
+* Document upload and information organization.
+* AI-powered extraction and document-specific summaries.
+* Smart search and information vault.
+* Key facts, dates, entities, and recommendations.
+* Summary export and AI audio summary, where supported.
 
-```bash
-cd "D:\Mini Projects\infonexis-ai\backend"
-npm install
-node server.js
+### Intelligence
+
+* Conflict and inconsistency detection.
+* Missing information identification.
+* Side-by-side document comparison.
+* Change history and information timeline.
+* Explainable AI insights and evidence references.
+* Knowledge relationships and information health analysis.
+
+### Actions
+
+* Prioritized action items.
+* Deadline tracking and task status.
+* AI-assisted recommendations.
+* Pending, In Progress, and Resolved workflows.
+
+### Sources
+
+* Local document uploads.
+* Source integration management.
+* Gmail and Google Drive integration support, subject to configuration and authorization.
+* WhatsApp Business integration support as a future or configured capability.
+
+### Settings
+
+* Profile and role preferences.
+* Account and session security.
+* AI, language, voice, and document-processing preferences.
+* Notifications, privacy, and data management.
+
+## 4. Advanced Intelligence Capabilities
+
+The platform is designed to support advanced information intelligence capabilities such as:
+
+* **Information DNA:** A structured profile of an information item.
+* **Evidence Trail:** Trace insights back to available source material.
+* **Information Lineage:** Track information from its source through analysis and resolution.
+* **Attention Scoring:** Prioritize information using urgency, deadlines, and detected issues.
+* **Information Freshness:** Identify information that may be outdated.
+* **Duplicate Detection:** Find potentially repeated documents or records.
+* **Decision Cockpit:** Organize information into Now, Next, Watch, and Resolved.
+* **Source-Cited AI Assistant:** Present supporting references when source evidence is available.
+* **Privacy Center:** Help users understand and manage connected sources and stored data.
+
+Availability of these capabilities depends on implementation, configuration, and connected services.
+
+## 5. Technology Stack
+
+| Layer               | Technology                                          |
+| ------------------- | --------------------------------------------------- |
+| Frontend            | React, Vite, JavaScript, CSS                        |
+| Backend             | Node.js, Express.js                                 |
+| Database            | MongoDB, Mongoose                                   |
+| Authentication      | JWT-based authentication architecture               |
+| AI                  | LLM API integration                                 |
+| Document Processing | PDF.js / PDF parsing libraries                      |
+| OCR                 | Tesseract.js                                        |
+| Voice Input         | Browser Speech Recognition or supported STT service |
+| Voice Output        | Text-to-Speech or supported TTS service             |
+| API Communication   | REST APIs                                           |
+
+The exact libraries and services used depend on the current implementation and environment configuration.
+
+## 6. Application Architecture
+
+```text
+User
+  |
+  v
+React Frontend
+  |
+  v
+Express.js REST API
+  |
+  +--> Authentication and Authorization
+  |
+  +--> Document Processing and OCR
+  |
+  +--> AI Understanding and Extraction
+  |
+  +--> Intelligence and Action Services
+  |
+  +--> MongoDB Data Layer
 ```
 
-Backend will listen on: `http://localhost:5000` (API Health: `http://localhost:5000/api/health`)
+External AI services, cloud sources, SMS providers, and speech services require their respective credentials, permissions, and configuration.
 
-### Frontend Setup
+## 7. Project Structure
 
-```bash
-cd "D:\Mini Projects\infonexis-ai\frontend"
+```text
+infonexis-info/
+├── frontend/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── style.css
+│   ├── package.json
+│   └── vite.config.js
+├── backend/
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   ├── middleware/
+│   ├── services/
+│   └── server.js
+├── scripts/
+├── infonexis.png
+├── .gitignore
+└── README.md
+```
+
+*Note: The actual folders and filenames may differ as the project evolves.*
+
+## 8. Getting Started
+
+### Prerequisites
+
+Install the following:
+
+* Node.js and npm.
+* Git.
+* MongoDB, if using a local database, or a configured MongoDB service.
+* Required API credentials for enabled external services.
+
+### Run the Frontend
+
+Open a terminal in the project root:
+
+```powershell
+cd frontend
 npm install
 npm run dev
 ```
 
-Frontend will run on: `http://localhost:5173`
+Open the local URL displayed by Vite, usually:
+
+`http://localhost:5173`
+
+### Run the Backend
+
+Open a second terminal:
+
+```powershell
+cd backend
+npm install
+```
+
+Configure the required environment variables, then run the server using the command defined in the backend `package.json`. If the project defines a start script, use:
+
+```powershell
+npm start
+```
+
+The API port and health-check URL depend on the backend configuration.
+
+## 9. Environment Configuration
+
+Store credentials in environment variables rather than hardcoding them in source files.
+
+Typical configuration may include:
+
+```env
+PORT=5000
+MONGODB_URI=
+JWT_SECRET=
+LLM_API_KEY=
+```
+
+Add other variables only when required by the implemented integrations.
+
+**Security:** Never commit real API keys, passwords, JWT secrets, database credentials, or private tokens to GitHub. Keep environment files such as `.env` out of version control.
+
+## 10. Authentication and Privacy
+
+INFONEXIS is designed to support secure authentication, protected routes, authorized source connections, and controlled access to user information.
+
+Production deployment should include:
+
+* Secure session and token handling.
+* Server-side input validation.
+* Access control for protected APIs.
+* Safe file-upload validation.
+* Appropriate data-retention and deletion controls.
+* Proper authorization for external integrations.
+
+SMS OTP, OAuth, and external integrations must be configured with the appropriate providers before they can operate in production.
+
+## 11. Development Roadmap
+
+Potential development milestones include:
+
+1. Complete the core application interface and navigation.
+2. Validate login, OTP, and protected-route workflows.
+3. Implement document upload and content extraction.
+4. Connect the LLM API for document-specific analysis.
+5. Implement evidence-backed conflict and missing-information detection.
+6. Build action tracking, timelines, and intelligence dashboards.
+7. Integrate supported voice, translation, and audio-summary features.
+8. Configure database persistence and authorized external sources.
+9. Test responsive layouts, security, reliability, and performance.
+
+## 12. Project Goal
+
+INFONEXIS aims to go beyond basic document summarization by connecting information understanding with evidence, prioritization, issue detection, and actionable workflows.
+
+**Our vision:** Help people spend less time searching through information and more time making informed decisions.
 
 ---
 
-## 5. User Journey & Authentication Flow
-
-1. **Splash Screen (`/`)**: 5-second branded logo animation with cyan/blue glow and skip button.
-2. **Login (`/login`)**: First Name, Phone Number, Password, Role selection &rarr; triggers SMS/dev OTP.
-3. **OTP Verification (`/otp`)**: 6-digit verification code (`123456` in demo/dev mode).
-4. **Introduction Screen (`/intro`)**: Value points explanation with "Connect & Continue" CTA.
-5. **Authenticated Workspace (`/app/*`)**: Full dashboard with persistent desktop sidebar, fixed mobile bottom navigation, 3D floating assistant button (✦), and header controls.
-6. **Exit / Logout (`ExitModal`)**: 3D typography modal (*"Keep Exploring. Keep Understanding. See you soon..."*).
+**INFONEXIS — Understand What Matters. Act with Confidence.**
